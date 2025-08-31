@@ -1,0 +1,214 @@
+/* --- General & Font Styles --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: #f4f7f6;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+/* --- Welcome Page Styles --- */
+.welcome-container {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.welcome-container h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-container .tagline {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.welcome-container .nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* --- General Button Styles --- */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5px;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: #2575fc;
+  color: white;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn--full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-customer {
+  background-color: white;
+  color: #2575fc;
+}
+
+.btn-owner {
+  background-color: transparent;
+  color: white;
+}
+
+.btn-owner:hover {
+  background-color: white;
+  color: #6a11cb;
+}
+
+/* --- Form Page Styles --- */
+.form-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.form-wrapper {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-wrapper h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-links {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.form-links a {
+  display: block;
+  color: #2575fc;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.form-links a:hover {
+  text-decoration: underline;
+}
+
+/* --- Theme Color Styles --- */
+.theme-customer .form-wrapper {
+  border-top: 4px solid #2575fc;
+}
+.theme-owner .form-wrapper {
+  border-top: 4px solid #6a11cb;
+}
+
+/* --- Dashboard Styles --- */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.dashboard__sidebar {
+  width: 260px;
+  background-color: #1e293b;
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard__sidebar .logo {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.dashboard__nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard__nav li a, .dashboard__nav li button {
+  display: block;
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s;
+  width: 100%;
+  background: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dashboard__nav li a:hover, .dashboard__nav li button:hover {
+  background-color: #334155;
+  color: white;
+}
+
+.dashboard__nav li .active {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.dashboard__nav .logout {
+  margin-top: auto;
+}
+
+.dashboard__main {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f8fafc;
+}
